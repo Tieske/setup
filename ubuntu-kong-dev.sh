@@ -4,6 +4,7 @@
 
 sudo apt-get update
 sudo apt-get install -y apt-transport-https curl lsb-core httpie
+sudo apt-get install -y build-essential docker-compose
 
 # Kong specific
 echo "deb https://kong.bintray.com/kong-deb `lsb_release -sc` main" | sudo tee -a /etc/apt/sources.list
@@ -22,3 +23,6 @@ echo 'export PATH="/usr/local/openresty/luajit/bin:$PATH"' >> "$HOME/.profile"
 # add resty to path
 echo 'export PATH="/usr/local/openresty/bin:$PATH"' >> "$HOME/.profile"
 
+# set up Git
+git config --global user.name "Thijs Schreijer"
+git config --global user.email "thijs@thijsschreijer.nl"
