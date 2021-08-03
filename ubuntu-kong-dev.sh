@@ -4,7 +4,7 @@
 
 sudo apt-get update
 sudo apt-get install -y apt-transport-https curl lsb-core httpie
-sudo apt-get install -y build-essential docker-compose
+sudo apt-get install -y build-essential docker-compose unzip
 
 # Kong specific
 echo "deb https://kong.bintray.com/kong-deb `lsb_release -sc` main" | sudo tee -a /etc/apt/sources.list
